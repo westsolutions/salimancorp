@@ -10,31 +10,160 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
     <header class="main-header">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">Logo</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#">Link</a>
-                        <a class="nav-item nav-link" href="#">Link</a>
-                        <a class="nav-item nav-link" href="#">Link</a>
-                    </div>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="#">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link bg-dark " href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <div class="container">
-        <h1>test</h1>
-    </div>
+
+    <section class="hero">
+        
+        <div class="your-class">
+            <div class="slick-content">
+                <div class="container">
+                    <p>sssssssssssssssssssssssssssssssssss</p>
+                </div>
+            </div>
+            <div class="slick-content">
+                <div class="container">
+                    <p>sssssssssssssssssssssssssssssssssss</p>
+                </div>
+            </div>
+            <div class="slick-content">
+                <div class="container">
+                    <p>sssssssssssssssssssssssssssssssssss</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about-us text-center py-5">
+        <h2 class="dark-text title-section">About us</h2>
+        <p class="big-text">Soliman Corp is a commercial real estate consulting firm focused on <strong>acquisitions</strong>, <strong>financing</strong> and <strong>developments</strong>.</p>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="d-flex justify-content-center justify-content-lg-between flex-column flex-lg-row">
+                <div class="card">
+                    <div class="img-wrap">
+                        <img class="img-card" src="static/images/acquisitions.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase text-center"><strong>Acquisitions</strong></h5>
+                        <ul class="services-list">
+                            <li>Deal negotiations.</li>
+                            <li>Due diligence management.</li>
+                            <li>Underwriting.</li>
+                            <li>Sourcing equity.</li>
+                            <li>Partnership structures.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-wrap">
+                        <img class="img-card" src="static/images/financing.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase  text-center"><strong>Financing</strong></h5>
+                        <p class="card-text">With our personal relationships throughout an extensive network of lenders, brokers, appraisers, lawyers and notaries, we strategically and efficiently handle the entire financing and funding process for our clients.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-wrap">
+                        <img class="img-card" src="static/images/developments.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase text-center"><strong>Development</strong></h5>
+                        <ul class="services-list">
+                            <li>Budgeting hard and soft costs.</li>
+                            <li>Construction loans and draw management.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner-bottom">
+        <div class="container text-center">
+            <h2 class="light-text title-section">Clients</h2>
+            <p>Our clients range from high net worth individuals, developers, institutions, REITs, corporations and foreign investors investing in all major asset classes (office, retail, industrial, residential, hotel and land).</p>
+        </div>    
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h2 class="dark-text title-section text-center">Contact</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 mx-auto">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                            </div>
+                            <div class="form-group  col-md-6"">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn w-100"><strong>Send</strong></button>
+                    </form> 
+                </div> 
+                <div class="col-12 ">
+                    <div class="flex-column d-flex text-center">
+                        <a href="tel:(514)893-5333">(514) 893-5333</a>
+                        <a href="mailto:jsoliman@solimancorp.ca">jsoliman@solimancorp.ca</a>
+                        
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <footer class="page-footer font-small main-footer">
+                <div class="footer-copyright text-center py-3">©2019 soliman corp</div>
+            </footer>
+        </div>
+    </section>
     
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="static/js/app.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
+
 </html>

@@ -4009,16 +4009,69 @@ svg {
   max-width: 100%; }
 
 body {
-  background: red !important;
   color: #000;
   font-family: 'Montserrat', sans-serif; }
 
 a {
-  color: #000;
+  color: #000 !important;
   font-family: 'Montserrat', sans-serif; }
+  a:hover {
+    opacity: 0.8; }
 
-h1 {
-  color: green; }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.btn {
+  background-color: #1B334B;
+  border-radius: 0;
+  color: #fff; }
+
+input, textarea {
+  border-radius: 0 !important; }
+
+.card {
+  border-radius: 0 !important;
+  max-width: 300px;
+  border: 0px !important; }
+
+.title-section {
+  font-size: 14px;
+  line-height: 34px;
+  text-transform: uppercase; }
+
+.light-text {
+  color: #fff; }
+
+.dark-text {
+  color: #000; }
+
+.big-text {
+  font-size: 14px;
+  line-height: 34px; }
+
+.container-fluid {
+  margin-right: 0 !important;
+  padding-right: 0 !important; }
+
+.bg-dark {
+  background-color: #000 !important;
+  color: #fff !important; }
+  .bg-dark:hover {
+    background-color: #1B334B !important;
+    transition: 2s; }
+
+.services-list {
+  padding-left: 16px; }
+  .services-list li {
+    line-height: 21px;
+    font-size: 13px; }
+
+.slick-content {
+  color: #fff;
+  z-index: 100;
+  height: 600px; }
 
 .btn path {
   transition: background-color 0.15s ease-in-out; }
@@ -4028,3 +4081,76 @@ h1 {
 
 .thoughts-btn svg {
   margin-top: -5px; }
+
+.main-header .navbar {
+  padding: 0 !important; }
+
+.main-header .bg-dark {
+  color: #fff !important; }
+
+.main-header .nav-link {
+  padding: 0.4rem 1rem;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 1.71px;
+  text-transform: uppercase; }
+
+.main-header .navbar-brand {
+  display: inline-block;
+  padding: .4rem 1rem;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 1.71px; }
+
+.services .card {
+  margin: 0; }
+
+.services .card-text {
+  font-size: 13px;
+  line-height: 24px; }
+
+.services .card-title {
+  width: 220px;
+  padding: 13px 0;
+  letter-spacing: 2.63px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 auto;
+  position: absolute;
+  top: -35px;
+  transform: translate(-50%);
+  left: 50%; }
+
+.services .card-body {
+  position: relative;
+  padding-left: 0; }
+
+.services .img-wrap {
+  max-height: 175px;
+  overflow: hidden;
+  border-bottom: 7px solid #1B334B; }
+
+.banner-bottom {
+  background-image: url("../images/clients.jpg");
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center; }
+
+.your-class {
+  background-image: url("../images/clients.jpg");
+  height: 600px; }
+
+@media (min-width: 992px) {
+  .main-header .bg-dark {
+    padding-right: 57px !important;
+    padding-left: 57px !important; } }
+
+@media (max-width: 992px) {
+  .services .card {
+    margin: 0 auto; } }
+
+.main-footer {
+  border-top: 1px solid #D8D8D8; }

@@ -3,14 +3,77 @@ svg {
 }
 
 body {
-	background: red!important;
 	color: #000;
 	font-family: 'Montserrat', sans-serif;
 }
 a {
-	color:  #000;
+	color:  #000!important;
 	font-family: 'Montserrat', sans-serif;
+	&:hover {
+		opacity: 0.8;
+	}
 }
-h1 {
-	color: green;
+
+h2.light {
+
+}
+h2.dark {
+	
+}
+img {
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+.btn {
+	background-color: #1B334B;
+	border-radius: 0;
+	color: #fff;
+}
+input, textarea {
+	border-radius: 0!important;
+}
+.card {
+	border-radius: 0!important;
+	max-width: 300px;
+	border: 0px!important;
+}
+.title-section {
+	font-size: 14px;
+	line-height: 34px;
+	text-transform: uppercase;	
+}
+.light-text {
+	color: #fff;	
+}
+.dark-text {
+	color: #000;
+}
+.big-text {
+	font-size: 14px;
+	line-height: 34px;
+}
+.container-fluid {
+	margin-right: 0!important;
+	padding-right: 0!important;
+}
+.bg-dark {
+	background-color: #000!important;
+	color: #fff!important;
+	&:hover {
+		background-color: #1B334B!important;
+		transition: 2s;
+	}
+}
+.services-list {
+	padding-left: 16px;
+	li {
+		line-height: 21px;
+		font-size: 13px;
+	}
+}
+.slick-content {
+	color: #fff;
+	z-index: 100;
+	height: 600px;
 }
