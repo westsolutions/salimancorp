@@ -4,10 +4,14 @@ $(function(){
   	arrows: false,
   	dots: true,
   	vertical: true,
+  	slidesToShow: 1,
+  	slidesToScroll:1,
   	adaptiveHeight: true,
-  	autoplay: true,
+  	appendDots: $(".hero-slider-dots"),
+  	centerMode: true,
+  	/*autoplay: true,
   	speed: 1000,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000*/
   });
 });
 

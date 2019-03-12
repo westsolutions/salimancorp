@@ -1,11 +1,11 @@
 .banner-bottom {
 	color: #fff;
-	margin-top: 36px;
+	margin-top: 32px;
 	.big-text {
-		font-size: 26px;
+		font-size: 28px;
 		line-height: 42px;
 		font-family: 'Playfair Display', serif;
-		margin: 16px 0;
+		margin-top: 14px;
 	    @media (max-width: 575.98px) { 
 			font-size: 20px;
 			line-height: 30px;
@@ -16,7 +16,7 @@
 .banner-bottom {
 	background-image: url('../images/clients.jpg');
 	width: 100%;
-	height: 350px;
+	min-height: 350px;
     background-repeat: no-repeat;
 	display: flex;
     align-items: center;

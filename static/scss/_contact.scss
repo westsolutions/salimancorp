@@ -1,7 +1,7 @@
 .contact {
 	padding: 56px 0 34px;
 	form {
-		margin: 12px 0;
+		margin: 20px 0;
 		.form-control {
 		    border: 1px solid #979797;
 		    font-size: 1rem;
@@ -16,9 +16,12 @@
 		    min-height: 100px;
 			max-height: 100px;
 		}
+		.form-group {
+		    margin-bottom: 14px;
+		}
 	}
 	.contact-us {
-		padding: 20px 0;
+		padding: 12px 0 20px;
 		.contact-item {
 			line-height: 23px;
 			font-size: 16px;

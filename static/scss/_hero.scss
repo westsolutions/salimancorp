@@ -1,22 +1,16 @@
 .slick-content {
 	color: #fff;
 	z-index: 100;
-	height: 645px;
+	max-width: 650px;
 }
 .hero-slider {
 	margin-bottom: 0!important;
 }
-.slick-list.draggable {
-	height: 645px!important;
-}
 .hero {
 	background-image: url('../images/clients.jpg');
-	height: 645px;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
+    padding: 190px 0;
     .slick-dots {
 	    li {
 	    	outline: none!important;
@@ -56,73 +50,64 @@
 		}
 	}
 }
+.hero-slider-wrapper {
+	padding-left: 100px;
+}
 .slick-dots {
-	position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 200;
     bottom: inherit;
     width: inherit;
     display: flex;
     flex-direction: column;
+    position: inherit;
+}
+.slick-list.draggable{
+	padding : 0!important;
 }
 .slick-slide {
-	height: 645px!important;
+	padding-left: 40px;
 	&:focus {
 		outline: none!important;
 	}
 }
 .slick-logo {
-	max-height: 277px;
 	max-width: 166px;
-	position: absolute;
-	left: 170px;
-}
-.slick-container {
-	display: flex;
-	height: 100%;
-	align-items: center;
 }
 .slick-title {
 	line-height: 50px;
 	font-size: 42px;
 	color: #fff;
-	max-width: 555px;
 	font-family: 'Playfair Display', serif;
-	position: absolute;
-	left: 30%;
+	padding: 40px;
+}
+@media (max-width: 1199.98px) { 
+	.slick-dots {
+	    bottom: inherit;
+	    width: inherit;
+	    display: flex;
+	    flex-direction: row;
+	    position: inherit;
+	}
 }
 @media (max-width: 991.98px) { 
-	.slick-content {
-		height: 465px;
-	}
-	.hero-slider {
-		margin-bottom: 0!important;
-	}
-	.slick-list.draggable {
-		height: 465px!important;
-	}
 	.hero {
-		height: 465px;
-	    padding: 0 20px;
+	    padding: 130px 0;
+	}
+	.hero-slider-wrapper {
+		padding-left: 70px;
 	}
 	.slick-slide {
-		height: 465px!important;
+		padding-left: 20px;
+
 	}
 	.slick-logo {
-		max-height: 150px;
-		max-width: 220px;
-		position: absolute;
-		left: 70px;
+		max-width: 135px;
 	}
 	.slick-title {
-		line-height: 30px;
-		font-size: 22px;
-		max-width: 555px;
-		left: 26%;
+		line-height: 40px;
+		font-size: 32px;
 	}
 }
-@media (max-width: 575.98px) { 
+/*@media (max-width: 575.98px) { 
 	.slick-content {
 		height: 365px;
 	}
@@ -149,4 +134,4 @@
 		max-width: 555px;
 		left: 33%;
 	}
-}
+}*/
