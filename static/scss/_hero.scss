@@ -1,0 +1,152 @@
+.slick-content {
+	color: #fff;
+	z-index: 100;
+	height: 645px;
+}
+.hero-slider {
+	margin-bottom: 0!important;
+}
+.slick-list.draggable {
+	height: 645px!important;
+}
+.hero {
+	background-image: url('../images/clients.jpg');
+	height: 645px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    .slick-dots {
+	    li {
+	    	outline: none!important;
+	    	margin: 5px 0;
+	    	width: 12px;
+    		height: 12px;
+			.slick-active {
+				color: #fff;
+				background-color: #fff;
+				button { 
+					color: #fff;
+				}
+			}
+	    	button {
+			    color: #fff;
+			    border: 0;
+			    outline: none;
+			    background: transparent;
+			    &:before {
+				    opacity: 1;
+				    color: transparent;
+				    border-radius: 50%;
+				    border: 1px solid #fff;
+				    height: 10px;
+				    width: 10px;
+				}
+			}
+		}
+	    li.slick-active  {
+			button { 
+				color: #fff;
+			    &:before {
+				    background-color: #fff;
+				}
+			}
+			
+		}
+	}
+}
+.slick-dots {
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+    bottom: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.slick-slide {
+	height: 645px!important;
+	&:focus {
+		outline: none!important;
+	}
+}
+.slick-logo {
+	max-height: 277px;
+	max-width: 166px;
+	position: absolute;
+	left: 170px;
+}
+.slick-container {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+.slick-title {
+	line-height: 50px;
+	font-size: 42px;
+	color: #fff;
+	max-width: 555px;
+	font-family: 'Playfair Display', serif;
+	position: absolute;
+	left: 30%;
+}
+@media (max-width: 991.98px) { 
+	.slick-content {
+		height: 465px;
+	}
+	.hero-slider {
+		margin-bottom: 0!important;
+	}
+	.slick-list.draggable {
+		height: 465px!important;
+	}
+	.hero {
+		height: 465px;
+	    padding: 0 20px;
+	}
+	.slick-slide {
+		height: 465px!important;
+	}
+	.slick-logo {
+		max-height: 150px;
+		max-width: 220px;
+		position: absolute;
+		left: 70px;
+	}
+	.slick-title {
+		line-height: 30px;
+		font-size: 22px;
+		max-width: 555px;
+		left: 26%;
+	}
+}
+@media (max-width: 575.98px) { 
+	.slick-content {
+		height: 365px;
+	}
+	.hero-slider {
+		margin-bottom: 0!important;
+	}
+	.slick-list.draggable {
+		height: 365px!important;
+	}
+	.hero {
+		height: 365px;
+	    padding: 0;
+	}
+	.slick-slide {
+		height: 365px!important;
+	}
+	.slick-logo {
+		max-height: 100px;
+		left: 40px;
+	}
+	.slick-title {
+		line-height: 30px;
+		font-size: 17px;
+		max-width: 555px;
+		left: 33%;
+	}
+}

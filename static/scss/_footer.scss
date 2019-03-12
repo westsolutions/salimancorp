@@ -1,3 +1,11 @@
 .main-footer {
-	border-top: 1px solid #D8D8D8;
+	.top-line {
+		border-top: 1px solid #D8D8D8;	
+	}
+	.footer-copyright {
+		letter-spacing: 2.08px;
+		line-height: 26px;
+		font-size: 11px;
+		text-transform: uppercase;
+	}
 }

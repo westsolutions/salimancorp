@@ -15,3 +15,18 @@
 		margin-top: -5px;
 	}
 }
+
+
+.btn {
+	background-color: #000;
+	border-radius: 0;
+	color: #fff;
+	letter-spacing: 2.77px;
+	text-transform: uppercase;
+	font-weight: bold;
+	&:hover {
+		background-color: #1B334B!important;
+		transition: 2s;
+		color: #fff;
+	}
+}
