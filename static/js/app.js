@@ -6,9 +6,8 @@ $(function(){
   	vertical: true,
   	slidesToShow: 1,
   	slidesToScroll:1,
-  	adaptiveHeight: true,
+  	//adaptiveHeight: true,
   	appendDots: $(".hero-slider-dots"),
-  	centerMode: true,
   	/*autoplay: true,
   	speed: 1000,
     autoplaySpeed: 2000*/
