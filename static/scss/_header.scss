@@ -1,49 +1,59 @@
-.main-header {	
-	.container-fluid {
-		margin-right: 0!important;
-		padding-right: 0!important;
-	}
-	.navbar {
-		padding: 0!important;
-	}
-	.bg-dark {
-		color: #fff!important;
-	}
-	.navbar-toggler {
-		&:focus {
-		outline: none!important;
-		}
-	}
-	.nav-link {
-		padding: 0.85rem 1.1rem!important;
-	    font-size: 14px;
-	    line-height: 15px;
-	    letter-spacing: 1.71px;
-	    text-transform: uppercase;
-	}
-	.navbar-brand {
-	    display: inline-block;
-	    padding: .85rem 2rem;
-	    font-size: 14px;
-	    line-height: 15px;
-	    letter-spacing: 1.71px;
-	}
-
-	.bg-dark {
-		background-color: $text-color!important;
-		color: #fff!important;
-		font-weight: bold;
-		&:hover {
-			background-color: #1B334B!important;
-			transition: 0.3s; 
-		}
-	}
+.main-header {
+    .container-fluid {
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+    }
+    .navbar {
+        padding: 0 !important;
+    }
+    .bg-dark {
+        color: #fff !important;
+    }
+    .navbar-toggler {
+        border: none !important;
+        &:focus {
+            outline: none !important;
+        }
+    }
+    .nav-link {
+        padding: 0.85rem 1.1rem !important;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 1.71px;
+        text-transform: uppercase;
+    }
+    .navbar-brand {
+        display: inline-block;
+        padding: .85rem 2rem;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 1.71px;
+    }
+    .bg-dark {
+        background-color: $text-color !important;
+        color: #fff !important;
+        font-weight: bold;
+        &:hover {
+            background-color: #1B334B !important;
+            transition: 0.3s;
+        }
+    }
 }
-@media (min-width: 992px){
-	.main-header {
-		.bg-dark {
-			padding-right: 68px!important;
-			padding-left: 68px!important;
-		}
+
+@media (min-width: 992px) {
+    .main-header {
+        .bg-dark {
+            padding-right: 68px !important;
+            padding-left: 68px !important;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container-fluid {
+        padding-left: 0!important;
+	}
+	.main-header .navbar-brand {
+		padding: .85rem 15px!important;
 	}
 }
