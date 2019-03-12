@@ -17,15 +17,9 @@
 			dots: true,
 			vertical: true,
 			adaptiveHeight: true,
-			// slidesToShow: 1,
-			// slidesToScroll: 1,
-			// adaptiveHeight: true,
 			appendDots: $(".hero-slider-dots"),
 			centerMode: true,
 			centerPadding: 100
-			/*autoplay: true,
-			speed: 1000,
-			autoplaySpeed: 2000*/
 		});
 
 		$('.js-contact-form').submit(function (ev) {
@@ -41,7 +35,7 @@
 			}).always(function (data) {
 				if (data.success) {
 					var name = $('.js-name-input').val();
-					$('js-name').text('');
+					$('js-name').text(name);
 					$('.js-send-success').modal('show');
 					$('.js-contact-form input').each(function () {
 						$(this).val('');
@@ -49,7 +43,7 @@
 					$('.js-contact-form textarea').html('')
 				}
 				else {
-					console.log(XMLHttpRequest, textStatus, errorThrown);
+					console.log(data);
 				}
 			});
 		});
