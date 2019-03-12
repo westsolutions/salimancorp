@@ -4144,6 +4144,9 @@ input, textarea {
     .hero .slick-dots li.slick-active button:before {
       background-color: #fff; }
 
+.wrap-logo {
+  max-height: 200PX; }
+
 .hero-slider-wrapper {
   padding-left: 100px; }
 
@@ -4157,70 +4160,59 @@ input, textarea {
 .slick-list.draggable {
   padding: 0 !important; }
 
-.slick-slide {
+.slick-slide:focus {
+  outline: none !important; }
+
+.slider-wrapper {
   padding-left: 40px; }
-  .slick-slide:focus {
-    outline: none !important; }
 
 .slick-logo {
   max-width: 166px; }
 
 .slick-title {
+  /*padding: 40px;*/
   line-height: 50px;
   font-size: 42px;
   color: #fff;
-  font-family: 'Playfair Display', serif;
-  padding: 40px; }
+  margin: 0;
+  font-family: 'Playfair Display', serif; }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 991.98px) {
   .slick-dots {
     bottom: inherit;
     width: inherit;
     display: flex;
     flex-direction: row;
-    position: inherit; } }
-
-@media (max-width: 991.98px) {
+    position: inherit; }
+  .hero-slider-dots {
+    margin-top: 15px; }
+  .slider-wrapper {
+    padding-left: 20px; }
   .hero {
     padding: 130px 0; }
+    .hero .slick-dots li {
+      margin: 5px; }
   .hero-slider-wrapper {
-    padding-left: 70px; }
-  .slick-slide {
-    padding-left: 20px; }
+    padding-left: 0px; }
   .slick-logo {
     max-width: 135px; }
   .slick-title {
     line-height: 40px;
     font-size: 32px; } }
 
-/*@media (max-width: 575.98px) { 
-	.slick-content {
-		height: 365px;
-	}
-	.hero-slider {
-		margin-bottom: 0!important;
-	}
-	.slick-list.draggable {
-		height: 365px!important;
-	}
-	.hero {
-		height: 365px;
-	    padding: 0;
-	}
-	.slick-slide {
-		height: 365px!important;
-	}
-	.slick-logo {
-		max-height: 100px;
-		left: 40px;
-	}
-	.slick-title {
-		line-height: 30px;
-		font-size: 17px;
-		max-width: 555px;
-		left: 33%;
-	}
-}*/
+@media (max-width: 575.98px) {
+  .hero {
+    padding: 100px 0; }
+    .hero .slick-dots li {
+      margin: 5px; }
+  .slider-wrapper {
+    padding-left: 10px; }
+  .slick-logo {
+    max-width: 80px; }
+  .slick-title {
+    line-height: 32px;
+    font-size: 24px; } }
+
 .main-footer .top-line {
   border-top: 1px solid #D8D8D8; }
 
