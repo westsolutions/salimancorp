@@ -35,7 +35,7 @@
 			}).always(function (data) {
 				if (data.success) {
 					var name = $('.js-name-input').val();
-					$('js-name').text(name);
+					$('.js-name').text(name);
 					$('.js-send-success').modal('show');
 					$('.js-contact-form input').each(function () {
 						$(this).val('');
