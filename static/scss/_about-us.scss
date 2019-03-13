@@ -1,13 +1,13 @@
 .about-us {
-	padding: 60px 0 33px;
-	.big-text {
-		margin-top: 15px;
-		font-size: 35px;
-	    line-height: 52px;
-		font-family: 'Playfair Display', serif;
-	    @media (max-width: 575.98px) { 
-			font-size: 26px;
-			line-height: 45px;
-	    }
-	}
+    padding-top: 60px;
+    .big-text {
+        margin-top: 15px;
+        font-size: 35px;
+        line-height: 52px;
+        font-family: 'Playfair Display', serif;
+        @media (max-width: 575.98px) {
+            font-size: 26px;
+            line-height: 45px;
+        }
+    }
 }

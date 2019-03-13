@@ -1,6 +1,3 @@
-## "DW" Hugo theme
----
-
 ##### Installation 
 Theme style compiler reqire some dependecies. Run following command in terminal ```npm i```. 
 
