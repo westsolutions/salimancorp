@@ -50,17 +50,5 @@
 				}
 			});
 		});
-
-
-		$(window).on("scroll", function() {
-		    if($(window).scrollTop() > 1) {
-		        $(".main-header").addClass("active-mobile-menu");
-
-		    } else {
-		        //remove the background property so it comes transparent again (defined in your css)
-		       $(".main-header").removeClass("active-mobile-menu");
-		    }
-		});
-
 	});
 })(jQuery);
