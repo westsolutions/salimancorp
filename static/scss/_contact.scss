@@ -3,21 +3,21 @@
 	form {
 		margin: 20px 0;
 		.form-control {
-		    border: 1px solid #979797;
-		    font-size: 1rem;
-		    letter-spacing: 2.31px;
-		    text-transform: uppercase;
-		    font-size: 12px;
-		    height: calc(1.5em + 1.3rem + 2px);
-    		padding: .7rem 1.3rem;
-        	line-height: 21px;
+			border: 1px solid #979797;
+			font-size: 1rem;
+			letter-spacing: 2.31px;
+			text-transform: uppercase;
+			font-size: 12px;
+			height: calc(1.5em + 1.3rem + 2px);
+			padding: .7rem 1.3rem;
+			line-height: 21px;
 		}
 		textarea.form-control {
-		    min-height: 100px;
+			min-height: 100px;
 			max-height: 100px;
 		}
 		.form-group {
-		    margin-bottom: 14px;
+			margin-bottom: 14px;
 		}
 	}
 	.contact-us {
@@ -25,12 +25,12 @@
 		.contact-item {
 			line-height: 23px;
 			font-size: 16px;
-		    letter-spacing: 2.77px;
-		    text-transform: uppercase;	
-		    @media (max-width: 575.98px) { 
+			letter-spacing: 2.77px;
+			text-transform: uppercase;	
+			@media (max-width: 575.98px) { 
 				line-height: 18px;
 				font-size: 14px;
-		    }
+			}
 		}
 		.fab {
 			margin-top: 10px;

@@ -15,19 +15,13 @@
 		$('.hero-slider').slick({
 			arrows: false,
 			dots: true,
-			//vertical: true,
-			//adaptiveHeight: true,
-			//draggable: true,
 			appendDots: $(".hero-slider-dots"),
-			//centerMode: true,
-			//centerPadding: 100,
-		    infinite: true,
-		    //cssEase: 'linear',
-			slidesToScroll: 1,
-			//autoplay: true,
-			//autoplaySpeed: 2000,
+			dots: true,
+			infinite: true,
+			speed: 500,
 			fade: true,
-			slidesToShow: 1
+			cssEase: 'linear',
+			draggable: false
 		});
 
 
