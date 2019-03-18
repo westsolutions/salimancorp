@@ -15,12 +15,21 @@
 		$('.hero-slider').slick({
 			arrows: false,
 			dots: true,
-			vertical: true,
-			adaptiveHeight: true,
+			//vertical: true,
+			//adaptiveHeight: true,
+			//draggable: true,
 			appendDots: $(".hero-slider-dots"),
-			centerMode: true,
-			centerPadding: 100
+			//centerMode: true,
+			//centerPadding: 100,
+		    infinite: true,
+		    //cssEase: 'linear',
+			slidesToScroll: 1,
+			//autoplay: true,
+			//autoplaySpeed: 2000,
+			fade: true,
+			slidesToShow: 1
 		});
+
 
 		$('.js-contact-form').submit(function (ev) {
 			ev.preventDefault();
@@ -47,5 +56,17 @@
 				}
 			});
 		});
+
+
+		$(window).on("scroll", function() {
+		    if($(window).scrollTop() > 1) {
+		        $(".main-header").addClass("active-mobile-menu");
+
+		    } else {
+		        //remove the background property so it comes transparent again (defined in your css)
+		       $(".main-header").removeClass("active-mobile-menu");
+		    }
+		});
+
 	});
 })(jQuery);

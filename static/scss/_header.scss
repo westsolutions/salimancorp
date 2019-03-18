@@ -1,4 +1,8 @@
 .main-header {
+
+    width: 100%;
+    z-index: 10;
+    top: 0;
     .container-fluid {
         margin-right: 0 !important;
         padding-right: 0 !important;
@@ -39,7 +43,13 @@
         }
     }
 }
-
+.active-mobile-menu {
+    -webkit-box-shadow: -1px 0px 5px 5px rgba(0,0,0,0.18);
+    -moz-box-shadow: -1px 0px 5px 5px rgba(0,0,0,0.18);
+    box-shadow: -1px 0px 5px 5px rgba(0,0,0,0.18);
+    background-color: white;
+    position: fixed;
+}
 @media (min-width: 992px) {
     .main-header {
         .bg-dark {

@@ -1,21 +1,45 @@
 .slick-content {
     color: #fff;
     z-index: 100;
-    max-width: 700px;
     min-height: 300px;
-    display: flex !important;
-    align-items: center;
+    /*display: flex !important;
+    align-items: center;*/
 }
 
 .hero-slider {
     margin-bottom: 0 !important;
 }
+.hero-slider-wrapper {
+    padding-left: 80px;
+}
 
+.slick-list.draggable {
+    padding: 0 !important;
+}
+
+.slick-slide {
+    &:focus {
+        outline: none !important;
+    }
+}
+
+.slider-wrapper {
+    padding-left: 40px;
+}
 .hero {
     background-image: url('../images/hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 190px 0;
+    /*.slick-track {
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    display: flex;
+	    align-items: center;
+	    margin-left: auto;
+	    margin-right: auto;
+	}*/
     .slick-dots {
         li {
             outline: none !important;
@@ -59,9 +83,6 @@
     max-height: 200px;
 }
 
-.hero-slider-wrapper {
-    padding-left: 100px;
-}
 
 .slick-dots {
     bottom: inherit;
@@ -71,22 +92,8 @@
     position: inherit;
 }
 
-.slick-list.draggable {
-    padding: 0 !important;
-}
-
-.slick-slide {
-    &:focus {
-        outline: none !important;
-    }
-}
-
-.slider-wrapper {
-    padding-left: 40px;
-}
-
 .slick-logo {
-    max-width: 166px;
+    max-width: 160px;
 }
 
 .slick-title {
@@ -96,8 +103,12 @@
     margin: 0;
     font-family: 'Playfair Display', serif;
 }
-
 @media (max-width: 991.98px) {
+
+	.show-mobile-menu {
+		display: none;
+	}
+
     .slick-dots {
         bottom: inherit;
         width: inherit;
@@ -112,7 +123,9 @@
         padding-left: 20px;
     }
     .hero {
-        padding: 130px 0;
+	    padding: 130px 0;
+	    z-index: 11;
+	    position: relative;
         .slick-dots {
             li {
                 margin: 5px;
@@ -134,10 +147,16 @@
 @media (max-width: 575.98px) {
     .hero {
         padding: 50px 0;
+        .slick-content {
+        	justify-content: center;
+        }
         .slick-dots {
             li {
                 margin: 5px;
             }
+        }
+        .slick-title {
+        	text-align: center;
         }
     }
     .slider-wrapper {
