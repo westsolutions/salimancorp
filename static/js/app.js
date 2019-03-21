@@ -23,34 +23,7 @@
 			cssEase: 'linear',
 			draggable: false,
 			autoplay: true,
-  			autoplaySpeed: 3500
-		});
-
-
-		$('.js-contact-form').submit(function (ev) {
-			ev.preventDefault();
-			var data = $(this).serialize();
-			
-			$.ajax({
-				method: 'POST',
-				url: window.location.origin + window.location.pathname + 'mailer.php',
-				data: data,
-				dataType: 'json',
-				encode: true,
-			}).always(function (data) {
-				if (data.success) {
-					var name = $('.js-name-input').val();
-					$('.js-name').text(name);
-					$('.js-send-success').modal('show');
-					$('.js-contact-form input').each(function () {
-						$(this).val('');
-					});
-					$('.js-contact-form textarea').html('')
-				}
-				else {
-					console.log(data);
-				}
-			});
+  			autoplaySpeed: 5000
 		});
 	});
 })(jQuery);
