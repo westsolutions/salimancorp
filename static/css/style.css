@@ -4263,8 +4263,10 @@ textarea {
     border-radius: 0 !important;
     border: 0px !important;
     max-width: 350px; }
+    @media (max-width: 992px) {
+      .services .card {
+        margin: 0 auto; } }
   .services .card-text {
-    font-size: 14px;
     line-height: 30px; }
   .services .card-title {
     width: 255px;
@@ -4283,7 +4285,11 @@ textarea {
   .services .card-body {
     position: relative;
     padding-left: 0;
-    padding-top: 1.8rem; }
+    padding-top: 1.8rem;
+    font-size: 16px; }
+    @media (max-width: 992px) {
+      .services .card-body {
+        font-size: 14px; } }
   .services .img-wrap {
     max-height: 205px;
     overflow: hidden;
@@ -4295,25 +4301,22 @@ textarea {
     padding-left: 0; }
     .services .services-list li {
       line-height: 36px;
-      font-size: 14px;
       list-style: none;
       position: relative;
       padding-left: 15px; }
       .services .services-list li::before {
         content: '';
         position: absolute;
-        top: 50%;
+        top: 15px;
         left: 0;
-        transform: translateY(-50%);
         display: inline-block;
         height: 3px;
         width: 3px;
         border-radius: 50%;
         background-color: #000; }
-
-@media (max-width: 992px) {
-  .services .card {
-    margin: 0 auto; } }
+        @media (max-width: 992px) {
+          .services .services-list li::before {
+            top: 17px; } }
 
 .banner-bottom {
   color: #fff;
