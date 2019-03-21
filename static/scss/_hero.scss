@@ -39,22 +39,26 @@
 	background-image: url('../images/hero.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 190px 0;
+	padding: 190px 0 130px 0;
 	@media (max-width: 991.98px) {
 		padding-top: 100px;
 		padding-bottom: 50px;
 	}
-	.slick-dots {
+	.hero-slider-dots {
 		margin-top: 50px;
+
+		@media (max-width: 575.98px) {
+			margin-top: 20px;
+		}
+
+	}
+	.slick-dots {
 		bottom: inherit;
 		width: inherit;
 		display: flex;
 		flex-direction: row;
 		position: inherit;
 
-		@media (max-width: 575.98px) {
-			margin-top: 20px;
-		}
 		li {
 			outline: none !important;
 			width: 12px;

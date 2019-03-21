@@ -18,12 +18,12 @@
 			appendDots: $(".hero-slider-dots"),
 			dots: true,
 			infinite: true,
-			speed: 500,
+			speed: 600,
 			fade: true,
 			cssEase: 'linear',
 			draggable: false,
 			autoplay: true,
-  			autoplaySpeed: 2000
+  			autoplaySpeed: 3500
 		});
 
 
