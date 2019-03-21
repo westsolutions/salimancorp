@@ -13,11 +13,16 @@
 	}
 }
 
-.banner-bottom {
+.banner-bottom { 
 	background-image: url('../images/clients.jpg');
 	width: 100%;
 	min-height: 350px;
 	background-repeat: no-repeat;
 	display: flex;
 	align-items: center;
+	background-size: cover;
+    padding: 25px 0;
+	@media (max-width: 575.98px) {
+		padding: 50px 0; 
+	}
 }

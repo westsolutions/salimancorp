@@ -4128,10 +4128,6 @@ textarea {
 .hero-slider {
   margin-bottom: 0 !important; }
 
-.hero-slider-wrapper {
-  padding-left: 80px;
-  max-width: 100%; }
-
 .slick-list.draggable {
   padding: 0 !important; }
 
@@ -4144,7 +4140,11 @@ textarea {
 .slider-wrapper {
   padding-left: 40px;
   overflow: hidden;
-  flex: 1; }
+  flex: 1;
+  max-width: 620px; }
+
+.wrap-title {
+  max-width: 620px; }
 
 .hero {
   background-image: url("../images/hero.jpg");
@@ -4204,7 +4204,6 @@ textarea {
   font-size: 42px;
   color: #fff;
   margin: 0;
-  max-width: 580px !important;
   font-family: 'Playfair Display', serif; }
 
 @media (max-width: 991.98px) {
@@ -4335,7 +4334,12 @@ textarea {
   min-height: 350px;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  background-size: cover;
+  padding: 25px 0; }
+  @media (max-width: 575.98px) {
+    .banner-bottom {
+      padding: 50px 0; } }
 
 .contact {
   padding: 56px 0 34px; }
