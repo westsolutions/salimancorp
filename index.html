@@ -178,19 +178,17 @@
             <h2 class="dark-text title-section text-center">Contact</h2>
             <div class="row">
                 <div class="col-12 col-md-6 mx-auto">
-                    <form class="js-contact-form">
+                    <form  method="POST" action="https://formspree.io/jsoliman@solimancorp.ca">
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control js-name-input" name="name" placeholder="Name"
-                                    required>
+                                <input type="text" class="form-control js-name-input" name="name" placeholder="Name">
                             </div>
                             <div class="form-group  col-md-6">
-                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                <input type="email" name="email" placeholder="Email" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" rows="3" placeholder="Message"
-                                required></textarea>
+                            <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
                         </div>
                         <button type="submit" class="btn w-100"><strong>Send</strong></button>
                     </form>
